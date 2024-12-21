@@ -2,12 +2,12 @@ function showTime() {
 	const date = new Date();
 
 	let today = date.toLocaleString("en", { weekday: "long" });
-	let hour = date.toLocaleString("pl", { hour: "2-digit" }); // use 24h time format
+	let hour = date.toLocaleString("pl", { hour: "2-digit" }); // use 12h time format
 	let minute = date.toLocaleString("en", { minute: "2-digit" });
 	let second = date.toLocaleString("en", { second: "2-digit" });
 	let day = date.toLocaleString("en", { day: "2-digit" });
 	let month = date.toLocaleString("en", { month: "2-digit" });
-	let year = date.toLocaleString("en", { year: "numeric" });
+	let year = date.toLocaleString("en", { year: "2-digit" });
 
 	minute = addZero(minute);
 	second = addZero(second);
@@ -24,3 +24,4 @@ function addZero(i) {
 }
 
 showTime();
+
