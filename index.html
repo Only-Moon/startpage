@@ -4,13 +4,11 @@
 <head>
     <title>~/startpage</title>
     <link rel="icon" href="static/images/icon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/style.css" />
 </head>
 
 <body>
-
     <header id="settings-content">
-
         <div class="settings-box">
             <div class="settings-separator">
                 <div class="settings-options">
@@ -19,79 +17,105 @@
                 </div>
 
                 <div class="settings-options">
-                <select id="search-engine-selector" class="settings-selector" onchange="changeSearchEngine()">
-                    <option value="https://search.brave.com/search">Brave</option>
-                    <option value="https://www.google.com/search">Google</option>
-                    <option value="https://duckduckgo.com/">DuckDuckGo</option>
-                    <option value="https://bing.com/">Bing</option>
-                </select>
+                    <select id="search-engine-selector" class="settings-selector" onchange="changeSearchEngine()">
+                        <option value="https://search.brave.com/search">Brave</option>
+                        <option value="https://www.google.com/search">Google</option>
+                        <option value="https://duckduckgo.com/">DuckDuckGo</option>
+                        <option value="https://bing.com/">Bing</option>
+                    </select>
 
-                <select id="colorscheme-selector" class="settings-selector" onchange="changeColorScheme()">
-                    <option value="dracula-dark">Dracula Dark</option>
-                    <option value="dracula-light">Dracula Light</option>
-                    <option value="edge">Edge</option>
-                </select>
+                    <select id="colorscheme-selector" class="settings-selector" onchange="changeColorScheme()">
+                        <option value="dracula-dark">Dracula Dark</option>
+                        <option value="dracula-light">Dracula Light</option>
+                        <option value="edge">Edge</option>
+                    </select>
                 </div>
             </div>
 
             <button onclick="hideSettings()" class="settings-hide"></button>
-
         </div>
-
     </header>
 
     <button onclick="showSettings()" class="settings-display"></button>
 
     <nav class="navigation-content">
-        <h1 class="title-display">
-            <a href="https://github.com/Only-Moon/startpage">Welcome back!</a></h1>
+        <h1 class="title-display">Welcome back!</h1>
         <h2 id="date-display"></h2>
 
         <form id="search-form" method="get">
-            <input type="text" id="search-input" placeholder="Search" name="q" autofocus/>
+            <input type="text" id="search-input" placeholder="Search" name="q" autofocus />
         </form>
 
         <ul>
             <li>~/Personal </li>
-            <li><a href="ext+container:name=Personal&url=https://reddit.com/">Reddit</a></li>
-            <li><a href="ext+container:name=Personal&url=https://web.telegram.org/">Telegran</a></li>
-            <li><a href="ext+container:name=Personal&url=https://gmail.com/">Gmail</a></li>
-            <li><a href="ext+container:name=Personal&url=https://x.com/home">Twitter</a></li>
-            <li><a href="ext+container:name=Personal&url=https://web.whatsapp.com/">Whatsapp</a></li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://reddit.com/">Reddit</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://web.telegram.org/">Telegran</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://gmail.com/">Gmail</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://x.com/home">Twitter</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://web.whatsapp.com/">Whatsapp</a>
+            </li>
         </ul>
         <ul>
             <li>~/dev </li>
-            <li><a href="ext+container:name=Coding&url=https://github.com">GitHub</a></li>
-            <li><a href="ext+container:name=Coding&url=https://w3schools.com">W3Schools</a></li>
-            <li><a href="ext+container:name=Coding&url=https://chatgpt.com/">Chatgpt</a></li>
-            <li><a href="ext+container:name=Coding&url=https://www.virustotal.com/gui/home/upload">VirusTotal</a></li>
-            <li><a href="ext+container:name=Coding&url=https://devdocs.io/">DevDocs</a></li>
+            <li>
+                <a href="ext+container:name=Coding&url=https://github.com">GitHub</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Coding&url=https://w3schools.com">W3Schools</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Coding&url=https://chatgpt.com/">Chatgpt</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Coding&url=https://www.virustotal.com/gui/home/upload">VirusTotal</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Coding&url=https://devdocs.io/">DevDocs</a>
+            </li>
         </ul>
         <ul>
             <li>~/watch </li>
-            <li><a href="ext+container:name=Personal&url=https://youtube.com">Youtube</a></li>
-            <li><a href="ext+container:name=Personal&url=https://web.stremio.com/">Stremio</a></li>
-            <li><a href="ext+container:name=Personal&url=https://www.ivanime.com/">Ivanime</a></li>
-            <li><a href="ext+container:name=Personal&url=https://malsync.moe/pwa/#/book/anime/1">MalSync</a></li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://youtube.com">Youtube</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://web.stremio.com/">Stremio</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://www.ivanime.com/">Ivanime</a>
+            </li>
+            <li>
+                <a href="ext+container:name=Personal&url=https://malsync.moe/pwa/#/book/anime/1">MalSync</a>
+            </li>
         </ul>
         <ul>
             <li>~/linux </li>
             <li><a href="https://github.com/druxorey/dotfiles">Dotfiles</a></li>
             <li><a href="https://wiki.archlinux.org/">Arch Wiki</a></li>
             <li><a href="https://explainshell.com/#">Explain Shell</a></li>
-            <li><a href="https://reddit.com/user/druxorey/m/techthings/">Techthings</a></li>
+            <li>
+                <a href="https://reddit.com/user/druxorey/m/techthings/">Techthings</a>
+            </li>
         </ul>
-
     </nav>
 
     <div>
-        <a href="ext+container:name=Personal&url=https://only-moon.github.io/startpage/"><img class="image-display" alt="fem" src="static/images/img.webp"></a>
+        <a href="ext+container:name=Personal&url=https://only-moon.github.io/startpage/"><img class="image-display"
+                alt="fem" src="static/images/img.webp" /></a>
     </div>
 
     <script type="text/javascript" src="scripts/get_date.js"></script>
     <script type="text/javascript" src="scripts/get_search_engine.js"></script>
     <script type="text/javascript" src="scripts/set_colorscheme.js"></script>
-
 </body>
 
 </html>
